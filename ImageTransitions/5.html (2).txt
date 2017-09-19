@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flip Card Effect</title>
+        <link rel="stylesheet" href="5style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <div class="cardBox">
+            <div class="card facebook">
+                <div class="card-front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+                <div class="card-back">Facebook</div>
+                <img src = "10.png" " style="position:relative;top:90px;left:25px;" alt="Biomod">
+               
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card twitter">
+                <div class="card-front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                <div class="card-back">Twitter</div>
+                <img src = "" " style="position:relative;top:90px;left:10px;" alt="Biomod">
+        
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card googleplus">
+                <div class="card-front"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+                <div class="card-back">Google+</div>
+            <img src = "11.png" " style="position:relative;top:90px;left:40px;" alt="Biomod">
+        
+            </div>
+        </div>
+        <div class="cardBox">
+            <div class="card spotify">
+                <div class="card-front"><i class="fa fa-spotify" aria-hidden="true"></i></div>
+                <div class="card-back">Spotify</div>
+            <img src = "12.png" " style="position:relative;top:90px;left:25px;" alt="Biomod">
+        
+            </div>
+        </div><div class="cardBox">
+            <div class="card whatsapp">
+                <div class="card-front"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+                <div class="card-back">Whatsapp</div>
+            <img src = "13.png" " style="position:relative;top:90px;left:60px;" alt="Biomod">
+        
+            </div>
+        </div><div class="cardBox">
+            <div class="card instagram">
+                <div class="card-front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <div class="card-back">Instagram</div>
+            <img src = "14.png" " style="position:relative;top:90px;left:10px;" alt="Biomod">
+        
+            </div>
+        </div>
+    </body>
+</html>
