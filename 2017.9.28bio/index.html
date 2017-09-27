@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('p1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("p2.jpg");
+    min-height: 100px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("p1.jpg");
+    min-height: 200px;
+    }
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   <head>
+		<!--meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Experimental CSS3 Animations for Image Transitions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Experimental CSS3 Animations for Image Transitions" />
+        <meta name="keywords" content="images, transition, animation, css3, jquery, 3d, 3d transform, webkit" />
+        <meta name="author" content="Pedro Botelho for Codrops" /-->
+        <title>CGUni o n WEB</title>
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<script type="text/javascript" src="js/modernizr.custom.70748.js"></script>
+		<style>
+    	.thepicture{
+    		display: none; 
+    	}
+    	.thecover{
+    		position: absolute;
+			width: 25px;
+			height: 25px;
+			top: 0px;
+			left: 0px;
+    	}
+    	.absolute1 {
+ 		 	position: absolute;
+  			top: 50px;
+  			left: 0px;
+  			width: 300px;
+  			height: 200px;
+		}
+		.absolute2 {
+ 		 	position: absolute;
+  			top: 50px;
+  			left: 300px;
+  			width: 300px;
+  			height: 200px;
+		}
+		.absolute3 {
+ 		 	position: absolute;
+  			top: 50px;
+  			left: 600px;
+  			width: 300px;
+  			height: 200px;
+		}
+		.absolute4 {
+ 		 	position: absolute;
+  			top: 370px;
+  			left: 0px;
+  			width: 300px;
+  			height: 200px;
+		}
+		.absolute5 {
+ 		 	position: absolute;
+  			top: 345px;
+  			left: 300px;
+  			width: 300px;
+  			height: 200px;
+		}
+		.absolute6 {
+ 		 	position: absolute;
+  			top: 370px;
+  			left: 600px;
+  			width: 300px;
+  			height: 200px;
+		}
+    	</style>
+
+    </head>
+    <body>
+    	<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">CGUni o </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="about">
+ 		 
+    	
+
+
+        <div class="container">
+        	
+			<!--div class="codrops-top">
+                <a href="http://tympanus.net/Tutorials/ItemBlur/">
+                    <strong>&laquo; Previous Demo: </strong>Item Blur Effect
+                </a>
+                <span class="right">
+					<a href="http://www.behance.net/qstra" target="_blank">Images by Joanna Kustra</a>
+                    <a href="http://tympanus.net/codrops/2011/12/19/experimental-css3-animations-for-image-transitions/">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div>
+			<header>
+				<h1>Experimental <span>CSS3</span> Animations <span>for (3D) Image Transitions <strong id="message">Webkit only!</strong></span></h1>
+				<p class="codrops-demos">
+					<a class="current-demo" href="index.html">Flip</a>
+					<a href="index2.html">Rotation</a>
+					<a href="index3.html">Multi-flip</a>
+					<a href="index4.html">Cube</a>
+					<a href="index5.html">Unfold</a>
+					<a href="index6.html">Others</a>
+				</p>
+			</header-->
+
+			<div class="te-container">
+				
+				<div class="te-controls">
+					<input  id="type" value="te-flip3" type="hidden">
+						<!--option value="te-flip1">Flip 1</option>
+						<option value="te-flip2">Flip 2</option>
+						<option value="te-flip3">Flip 3</option>
+						<option value="te-flip4">Flip 4</option-->
+					</input >
+
+					
+					<!--a id="te-next" href="#" class="te-next">next</-->
+					<div class="te-shadow"></div>
+				</div>
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="absolute1">
+			
+				<div id="te-wrapper" class="te-wrapper">
+					<div class="te-next">
+						<div class="te-images" >
+						<!--div class="thepicture"-->
+							<img src="images/1.png" >
+							<img src="images/white.jpg" >
+							<!--img src="images/3.jpg"/>
+							<img src="images/4.jpg"/>
+							<img src="images/5.jpg"/-->
+						</div>
+
+
+					<div class="te-cover">
+					
+						
+						<a href="C:\Users\tatao\Desktop\ImageTransitions\project.html" title="測試超連結"><img src="images/1.png"/></a>
+					</div>
+
+					<div class="te-transition">
+						<div class="te-card">
+							<div class="te-front"></div>
+							<div class="te-back"></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="absolute2">
+				<div id="te-wrapper2" class="te-wrapper">
+					<div class="te-next">
+						<div class="te-images" >
+						<!--div class="thepicture"-->
+							<img src="images/2.png" >
+							<img src="images/white.jpg" >
+							<!--img src="images/3.jpg"/>
+							<img src="images/4.jpg"/>
+							<img src="images/5.jpg"/-->
+						</div>
+
+
+					<div class="te-cover">
+					
+						<a href="#" title="測試超連結"><img src="images/2.png"/></a>
+					</div>
+
+					<div class="te-transition">
+						<div class="te-card">
+							<div class="te-front"></div>
+							<div class="te-back"></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="absolute3">
+				<div id="te-wrapper3" class="te-wrapper">
+					<div class="te-next">
+						<div class="te-images" >
+						<!--div class="thepicture"-->
+							<img src="images/3.png" >
+							<img src="images/white.jpg" >
+							<!--img src="images/3.jpg"/>
+							<img src="images/4.jpg"/>
+							<img src="images/5.jpg"/-->
+						</div>
+
+
+					<div class="te-cover">
+					
+						<a href="#" title="測試超連結"><img src="images/3.png"/></a>
+					</div>
+
+					<div class="te-transition">
+						<div class="te-card">
+							<div class="te-front"></div>
+							<div class="te-back"></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="absolute4">
+				<div id="te-wrapper4" class="te-wrapper">
+					<div class="te-next">
+						<div class="te-images" >
+						<!--div class="thepicture"-->
+							<img src="images/4.png" >
+							<img src="images/white.jpg" >
+							<!--img src="images/3.jpg"/>
+							<img src="images/4.jpg"/>
+							<img src="images/5.jpg"/-->
+						</div>
+
+
+					<div class="te-cover">
+					
+						<a href="#" title="測試超連結"><img src="images/4.png"/></a>
+					</div>
+
+					<div class="te-transition">
+						<div class="te-card">
+							<div class="te-front"></div>
+							<div class="te-back"></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="absolute5">
+			<img src="images/5.jpg">
+				<div id="te-wrapper5" class="te-wrapper">
+					<div class="te-next">
+						<div class="te-images" >
+						<!--div class="thepicture"-->
+							<img src="images/5.png" >
+							<img src="images/white.jpg" >
+							<!--img src="images/3.jpg"/>
+							<img src="images/4.jpg"/>
+							<img src="images/5.jpg"/-->
+						</div>
+
+
+					<div class="te-cover">
+						
+						<a href="#" title="測試超連結"><img src="images/5.png"/></a>
+					</div>
+
+					<div class="te-transition">
+						<div class="te-card">
+							<div class="te-front"></div>
+							<div class="te-back"></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+		<div class="absolute6">
+				<div id="te-wrapper6" class="te-wrapper">
+					<div class="te-next">
+						<div class="te-images" >
+						<!--div class="thepicture"-->
+							<img src="images/6.png" >
+							<img src="images/white.jpg" >
+							<!--img src="images/3.jpg"/>
+							<img src="images/4.jpg"/>
+							<img src="images/5.jpg"/-->
+						</div>
+
+
+					<div class="te-cover">
+					
+						<a href="#" title="測試超連結"><img src="images/6.png"/></a>
+					</div>
+
+					<div class="te-transition">
+						<div class="te-card">
+							<div class="te-front"></div>
+							<div class="te-back"></div>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  </div>
+ 
+
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" style="z-index: 0;top:600px;">
+  
+     <span class="w3-xxlarge w3-text-white w3-wide">CGUni o n</span>
+  </div>
+</div>
+
+
+		<script type="text/javascript" src="js/jquery.transitions.js"></script>
+		<script type="text/javascript" src="js/jquery.transitions2.js"></script>
+		<script type="text/javascript" src="js/jquery.transitions3.js"></script>
+		<script type="text/javascript" src="js/jquery.transitions4.js"></script>
+		<script type="text/javascript" src="js/jquery.transitions5.js"></script>
+		<script type="text/javascript" src="js/jquery.transitions6.js"></script>
+		<script> 
+			//var type=document.getElementById("type")
+		</script>
+		<script type="text/javascript" src="js/demo.js"></script>
+    </body>
+</html>
