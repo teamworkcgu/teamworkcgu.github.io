@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<title>CGUinon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>CGUionWeb<br>-Design</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><b>Synthesis and Characterization of <br>Nano-Magnetic Carriers</b></a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Expression of recombinant rhdosotmin <br>for detection</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Platelet preparation and protein analysis</a> 
+    
+  </div>
+</nav>
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Design</b></h1>
+    
+    <h2 class="w3-xxlarge w3-text-red">We divided our design into three parts:</h2>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="arc.jpg" style="width:100%" onclick="onClick(this)" >
+    </div>
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Synthesis and Characterization of <br>Nano-Magnetic Carriers</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="w3-large">
+    <p class="w3-xxlarge">Background</p>
+    <p>&emsp; Nano-magnetic beads (NMBs) are nanoscale magnetites (Fe3O4) with diameter ranging from 1 to 100 nanometers (nm) that have high magnetization values. They can be synthesized by the following chemical reaction:
+    <p>2Fe<sup>3</sup>+Fe<sup>2</sup>+8OH<sup>-</sup>->Fe<sub>3</sub>+4H<sub>2</sub>+4H<sub>2</sub>O</p>
+    <p>&emsp;To be a drug, protein or antibody carrier, NMBs are first coated with a film of poly [ethylene-co- (acrylic acid)] (PE-co-PAA) blended with PAA at the ratio of 4:1.<img1> PAA of the compound provides carboxyl group for antibody (anti-  of platelet integrin) and tripeptide (glutathione) conjugation utilizing the chemical reaction EDC/NHS cross-linking of carboxylates in which carboxylate react with EDC to form an unstable reactive o-acylisourea ester then convert into semi-stable amine-reactive NHS ester with the addition of sulfo-NHS; lastly, semi-stable amine-reactive NHS ester reacts with glutathione to form a stable amide bond [1]. <img2></p>
+    <p>Purified NMBs were examined by FTIR, TEM, UV-Vis spectrum and grain size determination to ensure the quality of the products. FTIR was utilized to provide detailed information of the functional groups within the product by analyzing vibration of each bond caused by infrared radiation. TEM was utilized to provide actual images of the NMBs both with and without PE-co-PAAB41 film in order to obtain the size and shape of each nanoparticle; more importantly, the average diameter of the product is for quality control. UV-Vis spectrophotometry informed us about the changes in absorbance of products with different concentration and grain size analysis provides an estimated size of the nanoparticles.<img3></p>
+    <p>Our intention is to create a system for assessment of the amount of platelet integrin   or   concentrations by using nanoparticles coated with anti-  or recombinant protein of GST fusion with rhodosotmin (GST-RHO, a 68 amino acid peptide from snake venom, which can specifically bind to platelet integrin  ) [2-4] and compared with the sensitivity of western blot analysis. The BluBox, a device invented by BluSense Diagnostic, provides a quantitative measurement of sample by optically measuring the Blu-ray units combined with sets of parameters by which is capable of detecting samples at low amounts. <img4></p>
+    <p class="w3-xxlarge">Method</p>
+    <p class="w3-xlarge">Synthesis of NMBs</p>
+    <p>Two hundred and fifteen mg of FeCl2 4H2O(s) and 350 mg of FeCl3(s) were dissolved in 200 ml DI water, stirred with a stirring bar while heated up to 60°C; in addition, 350 mg of NaOH(s) were dissolved into 50 ml of DI water. Right after the Fe2+ and Fe3+ solution reached 60°C, NaOH(aq) was added one drop per four (to eight) seconds. The aqueous mixture was cool down by cold water after all NaOH(aq) was applied and the NMBs were collected using a magnet then washed by DI water to decrease the pH value.</p>
+    <p>2FeCl<sub>3(s)</sub>+FeCl<sub>2</sub>&bull;4H<sub>2</sub>O<sub>(s)</sub>+8NaOH->Fe<sub>3</sub>O<sub>4(s)</sub>+8H<sub>2</sub>O+8NaCl</p>
+    <p class="w3-xlarge">FTIR of powder sample with KBr as background</p>
+    <p>Powder sample and KBr(s) was ground into fine powder by agate mortar and pestle till no crystallite was seen. A thirteen mm pellet press was assembled, the disk was placed at the bottom while enough powder was added to cover the disk and the column was inserted. The die was placed onto a hydraulic press and pumped to 3000 psi; subsequently, pressure was released and the base was removed. The disk along with the column was removed and the pellet in between was collected. The pellet was inserted into the IR sample holder and the FTIR spectrum was measured.</p>
+    <p class="w3-xlarge">UV-Vis spectrophotometry and grain size analysis of NMBs</p>
+    <p>Solution of NMBs was diluted into six different concentrations ranging from 0.001 to 0.02 mg/ml and samples were vibrated in a supersonic vibration machine to separate aggregated clusters and to evenly distribute the nanoparticles. Both programs were run with water as background and the results were transformed to plots.</p>
+    <p class="w3-xlarge">Coating of PE-co-PAA onto NMBs</p>
+    <p>PE co-PAA was dissolved in DMSO to produce a solution with the concentration of 5X10-2 mg/ml. Ten mg of dried NMBs were added into 50 ml of the diluted PE co-PAA/ DMSO solution; in addition, a glass of 600 ml DI water was cooled by ice. Both beakers of 600 ml DI water and PE co-PAA/ DMSO solution with NMBs were vibrated by a supersonic vibration machine to make the solution more evenly distributed. The aqueous mixture of PE-co-PAA and NMBs was added into the cold DI water one drop at a time. Coated NMBs were collected using a magnet, then washed with DI water, and stored in a bottle with 5 ml of DI water added.</p>
+    <p class="w3-xlarge">Conjugation of glutathione or anti-  antibodies onto PE-co-PAA shield</p>
+    <p>One ml of NMBs was mixed with 1 ml of 0.5M activation buffer (0.5 M MES mixed with 2.5 M NaCl), and 2.94 mg of EDC and 3.53 mg of NHS. Two ml of PBS was added, completely mixed and the solution was placed at room temperature for 15 minutes. One mg of glutathione or 0.1 µl of anti-  antibodies (Proteintech #24552-1-AP) was dissolved in 1 ml of PBS in another tube. Two solutions were mixed and placed at room temperature for two hours in dark; subsequently, the solution was centrifuged at 1200 rcf for 5 minutes to isolate coated NMBs from solution of surplus glutathione for total glutathione assay. NMBs with glutathione were then treated with GST-RHO(RGD) or GST-RHO(RGE) and incubated for two hours at room temperature.</p>
+    <p class="w3-xlarge">Total glutathione assay</p>
+    <p>Before the glutathione standard was diluted by a two-fold serial dilution, glutathione was performed a 1:1000 dilution in 1X Assay Buffer. In a 96-well plate, 25 l of the 1X Glutathione Reductase and 1X NADPH solution were added to each well. One hundred  l of the prepared glutathione standard or sample was added to each well. After 50  l of the 1X Chromogen was added and mixed briefly, immediately, the absorbance at 405 nm was recorded at 1-minute interval for 10 minutes in the plate reader. The average of each standard was graphed against incubation time. The net slopes of every standard were plotted against the concentration of glutathione. The net slopes of samples were compared with the standard curve to determine the concentration of the samples.</p>
+    <p class="w3-xlarge">References</p>
+    <p>[1] Grabarek, Z. and J. Gergely, <i>Zero-length crosslinking procedure with the use of active esters.</i> Anal Biochem, 1990. 185(1): p. 131-5.<br>
+       [2] Chang, H.H., et al., <i>Rhodostomin, an RGD-containing peptide expressed from a synthetic gene in Escherichia coli, facilitates the attachment of human hepatoma cells.</i> Biochem Biophys Res Commun, 1993. 190(1): p. 242-9.<br>
+       [3] Chang, C.P., et al., <i>Positional importance of Pro53 adjacent to the Arg49-Gly50-Asp51 sequence of rhodostomin in binding to integrin alphaIIbbeta3.</i> Biochem J, 2001. 357(Pt 1): p. 57-64.<br>
+       [4] Chen, C.Y., et al.,<i> Effect of D to E mutation of the RGD motif in rhodostomin on its activity, structure, and dynamics: importance of the interactions between the D residue and integrin.</i> Proteins, 2009. 76(4): p. 808-21.<br>
+
+</p>
+
+    </div>
+  </div>
+  
+  <!-- Services -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Expression of recombinant rhdosotmin <br>for detection</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="w3-large">
+    <p class="w3-xxlarge">Background</p>
+    <p>&emsp;Rhodostomin (RHO) from Calloselasma rhodostoma’s venom contains 68 amino acids with an Arg49-Gly50-Asp51 (RGD) sequence and 12 cysteine residues. RHO has a high binding affinity to platelet integrin   through its RGD sequence to compete out the fibrinogen binding which leads to inhibit platelet aggregation [1-3]. While the residue of aspartic acid of RHO is substituted by glutamic acid, RHO (RGE) loses its binding affinity to platelets [4]. <img5></p>
+    <p>In this project, we expressed RHO (RGD) and RHO (RGE) in E. coli to use as a ligand for detection of integrin  . Plasmids, pGST-RHO(RGD) and pGST-RHO(RGE), for expressing RHO (RGD) and RHO (RGE), respectively, were originally derived from synthetic genes fused with glutathione S-transferase (see Figure 1) [1].</p>
+    <p><img src="design-p1.jpg" width="560px" height="400px"></p>
+    <p class="w3-medium">Figure 1. Nucleotide sequence of the synthetic <i>RHO</i> gene</p>
+    <p>The 11 oligonucleotides covering two complementary strands of Rho gene were used for assembling of Rho gene. Five of them are continuous which represent the coding strand of Rho gene while the complementary strand is covered by six continuous segments. The amino acid sequence is presented in a three letter abbreviation and the 68 amino acids of RHO are indicated by boldface letters. The residues of cysteine are underlined and the Arg49-Gly50-Asp51 sequence is boxed.</p>
+    <p>After being induced by IPTG, the fusion proteins, GST-RHO(RGD) and GST-RHO(RGE) expressed in E. coli, can be purified by glutathione-conjugated Sepharose beads or glutathione-conjugated nano-magnetic beads for further platelet adhesion assay, western blot analysis, EIA or BluBox analysis.</p>
+    <p class="w3-xxlarge">Method</p>
+    
+    <p class="w3-xlarge">Transformation of <font color="red">pGST-RHO(RGD) </font>and <font color="red">pGST-RHO(RGE) </font>into competent DH5α cells</p>
+    <p>After competent DH5α cells were thawed on ice, 5 µl each for GST-RHO(RGD) and GST-RHO(RGE) plasmids were added into competent DH5α cells and then transferred onto plates. Five to ten glass platting beads were added to each plate and gently shaken to allow all samples to be evenly dispersed on the plates. Glass beads were then poured into the beaker with ethanol. The plates were incubated at 37℃ for 12 hours; afterward, plasmids were isolated from colonies and the DNA was sequenced (Tri-I Biotech, Inc.).</p>
+    
+    <p class="w3-xlarge">Transformation of <font color="red">pGST-RHO(RGD)</font> and <font color="red">pGST-RHO(RGE)</font> into BL21 competent cells </p>
+    <p>Plasmids isolated and verified from DH5α cells were transformed into BL21 competent cells for protein expression. Repeat the procedure as mentioned above, 5 µl each for GST-RHO(RGD) and GST-RHO(RGE) were added into BL21 competent cells and transferred onto plates.</p>
+    
+    <p class="w3-xlarge">Small-scale expression of GST-RHO(RGD) and GST-RHO(RGE)</p>
+    <p>Colonies consist of pGST-RHO(RGD) and pGST-RHO(RGE) from BL21 were inoculated into 2 tubes of 5 ml LB broth with ampicillin, respectively. The cultures were shaken overnight at 37℃, 160 rpm, and then refreshed by transferring 100 µl each overnight culture into 2 new tubes of 5 ml LB broth with ampicillin. Cultures were shaken at 37℃, 160 rpm for another 2 hours. Bacteria density was measured using a spectrophotometer (O.D.600). Protein expression was induced by adding 10  l of 100 mM IPTG (final concentration: 1mM IPTG) into the “Induced” tubes. All tubes (induction and non-induction) were shaken for additional 3 hours at 37℃, 160 rpm. Bacteria were collected by centrifugation and lysed for SDS-PAGE analysis.</p>
+
+    <p class="w3-xlarge">Large-scale expression of GST-RHO(RGD) and GST-RHO(RGE)</p>
+    <p>Colonies consist of pGST-RHO(RGD) and pGST-RHO(RGE) from BL21 were inoculated into 2 tubes of 5 ml LB broth with ampicillin respectively. The cultures were shaken overnight at 37℃, 160 rpm. Culture was first refreshed by transferring 100  l from each overnight culture into 2 flasks containing 500 ml LB broth with ampicillin.  After the bacteria growth reaching O.D. 0.6, IPTG was added as described above. Induced proteins were examined by SDS-PAGE and purified by glutathione-coated Sepharose or nano-magnetic beads.</p>
+
+    <p class="w3-xlarge">SDS-PAGE gel analysis</p>
+    <p>SDS/10%-PAGE Gel was assembled following the laboratory manual [5] and proteins samples from bacteria lysates were loaded. One hundred V and 180 V were used to run separating gel and stacking gel respectively. The stacking gel was removed and washed with ddH2O and F1 Rapid Gel Stain was added for staining. The gel was then washed with ddH2O, laid between two sheets of cellophane on top of a glass plate, and dried overnight in the ventilated hood [6].</p>
+
+    <p class="w3-xlarge">TGST pull-down assay</p>
+    <p>The intact platelets were lysed with RIPA. The platelet lysate was then pulled down by GST-fusion-protein-coated glutathione Sepharose beads. The pull-down proteins were analyzed by SDS-PAGE. After electrophoresis, the proteins were transferred to a PVDF membrane and detected with primary antibodies CD41/ integrin alpha 2b rabbit polyclonal antibodies, and donkey anti-rabbit IgG HRP as secondary antibodies against the integrin alpha 2b antibodies.</p>
+
+    <p class="w3-xlarge">Cell attachment assay</p>
+    <p>To know whether recombinant rhodostomin proteins can interact with integrins on cancer cell membrane to facilitate their attachment, we performed cell attachment assay. Cover slips were pre-coated with purified GST-RHO(RGD) or GST-RHO(RGE) proteins for 3 hours and then washed with PBS three times. After have blocking with BSA, we seeded proper number numbers of cancer cells (HeLa and HuH-7) onto cover slips for 15 minutes. Unattached cells were removed by PBS wash. Cover slips were then mounted on slide and observed with a microscope and photographed.</p>
+
+    <p class="w3-xlarge">References</p>
+    <p>[1] Chang, H.H., et al., <i>Rhodostomin, an RGD-containing peptide expressed from a synthetic gene in Escherichia coli, facilitates the attachment of human hepatoma cells.</i> Biochem Biophys Res Commun, 1993. 190(1): p. 242-9.<br>
+       [2] Chang, H.H., et al.,<i> Application of Recombinant Rhodostomin in Studying Cell Adhesion.</i> J Biomed Sci, 1997. 4(5): p. 235-243.<br>
+       [3] Chang, C.P., et al.,<i> Positional importance of Pro53 adjacent to the Arg49-Gly50-Asp51 sequence of rhodostomin in binding to integrin alphaIIbbeta3.</i> Biochem J, 2001. 357(Pt 1): p. 57-64.<br>
+       [4] Chen, C.Y., et al.,<i> Effect of D to E mutation of the RGD motif in rhodostomin on its activity, structure, and dynamics: importance of the interactions between the D residue and integrin.</i> Proteins, 2009. 76(4): p. 808-21.<br>
+       [5] Life Science Laboratory Manual, <i>Department of Biomedical Sciences, Chang Gung University (September, 2016).</i>
+
+
+</p>
+
+    </div>
+</div>
+  <!-- The Team -->
+   <!-- Services -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red">Platelet preparation and protein analysis</h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="w3-large">
+    <p class="w3-xxlarge">Background</p>
+    <p>Platelets are anucleated discoid cells that function as the "band aids of the blood stream" by controlling bleeding. The integrins of the platelet are a large family of adhesion receptors that mediate cell-extracellular matrix (ECM) and cell-cell interactions. Among them, integrin   (CD41) or called glycoproteins IIb/IIIa is the major integrin on platelets. The function of   is causing the aggregation of platelets, by binding to fibrinogen and von Willebrand factor which can bridge platelets together, or other ligands, such as vitronectin and fibronectin modulate aggregation [1-2]. <img6></p>
+    <p>
+      Platelets are derived from megakaryocytes which are present in bone marrows. In healthy people, platelet counts are between 1.3~4.5×105/ l. However, abnormal levels of growth factors, e.g., thrombopoietin, stimulate megakaryocytes biogenesis and maturation, which leads to high platelet production (thrombocytosis, > 4.5×105/ l) or low platelet production (thrombocytopenia, &#62;1.3×105/ l) in blood. In addition, many platelet disorders have been identified, including autoimmune disease (alloimmune thrombocytopenia) and genetic mutations of integrin   (Glanzmann thrombasthenia). A simple detection of various types of platelet function disorder is demanded in clinical examination. In this project, we aimed to develop magnetic nanotechnology to detect the level of integrin   or   and platelet count using anti-integrin   or rhodostomin (RHO), a disintegrin isolated from the snake venom. The RHO contains a sequence of Arg49-Gly50-Asp51 (RGD) that specifically binds to integrin  , and inhibits aggregation of platelet adhesion to fibrinogen [3]. <img5>
+    </p>
+    <p class="w3-xxlarge">Method</p>
+    <p class="w3-xlarge">Blood smear for differential interference contrast (DIC) microscope</p>
+    <p>The whole blood was collected from four Sprague Dawley (SD) rats individually. A drop of blood, about 4 mm in diameter, was placed on the slide (near the end). The drop was spread by using another slide (as a spreader) and placed the spreader at a 45˚ angle, backing into the drop of blood. The spreader was moved slowly to assured the smear was thin and well-distributed; afterward, covered by a cover slip. Industrial oil was dripped on the smear before it was put on the DIC microscope and pictures were taken.</p>
+    
+    <p class="w3-xlarge">Platelet purification, counting, and protein quantification</p>
+    <p>The whole blood was centrifuged at 150g for 30 minutes to obtain platelet-rich plasma (PRP). The PRP was centrifuged at 1000g for 1 minute to remove the remaining red blood cells and it was centrifuged again at 1000g for 15 minutes to obtain platelet pellet by discarding the supernatant. The platelet pellet was resuspended in Tyrode's buffer [4] with apyrase (1 unit/ml), whose volume was equal to the whole blood; afterward, the platelet suspension was centrifuged at 1000g for 15 minutes, and the supernatant was discarded. The pellet of platelets was resuspended in Tyrode's buffer again with the same volume of the whole blood. For platelet counting, 10  l of platelet suspension was diluted by ten thousand folds. The rest of the platelet suspension was centrifuged at 1000g for 15 minutes and the supernatant was discarded. The platelet pellet was resuspended in 200  l of cell lysis buffer, placed on ice for 30 minutes, and subsequently centrifuged at 13200 rpm for 10 minutes. Bradford assay was utilized for protein quantification of the supernatant.</p>
+    <p class="w3-xlarge">Western blot of platelet lysate</p>
+    <p>The platelet lysate was diluted to five different protein concentrations and then boiled with sample buffer at 100℃ for 5 minutes. The diluted samples were analyzed by SDS/8%-PAGE gel and transferred to a nitrocellulose membrane. The nitrocellulose membrane was stained with Ponceau S washed with ddH2O or 1X TBS. The membrane was blocked by 5% non-fat milk in 1X TBST for 1 hour. Integrin alpha 2b rabbit polyclonal antibody diluted by 1X TBST (1：1000) were used as primary antibody to detect diluted samples and anti-actin mouse monoclonal antibody diluted by 1X TBST (1：5000) as internal control, and both reaction were performed at 4℃ for 16 to 18 hours. Donkey anti-rabbit IgG HRP antibody diluted in 1X TBST(1：10000) and donkey anti-rabbit IgG HRP diluted in 1X TBST (1：10000) were used as secondary antibody. Chemiluminescence reagent (Millipore) was added subsequently on the membrane and incubated for 5 minutes at room temperature and detected by Bio-Rad detector.</p>
+    <p class="w3-xlarge">Western immunoblotting of the integrin  </p>
+    <p>Mag-Beads-Protein G (TOOLS) were washed by 1X PBST for 3 times, Mag-Beads-Protein G were incubated for 30 minutes at room temperature with 1  l CD41/integrin alpha 2b rabbit antibodies (Proteintech #24552-1-AP) or 0.5  l IgG rabbit antibodies for antibody conjugation. Lysed platelets in different concentration were mixed with antibodies-conjugated Mag-Beads-Protein G, incubated overnight at 4℃, and the platelets/Mag-Beads-Protein G complexes were washed by 1X PBST. Fifteen  l of sample buffer was added and the solution was boiled for 5 minutes at 100℃. SDS/ 8%-PAGE was performed followed by western blot.</p>
+    
+    <p class="w3-xlarge">References</p>
+    <p>
+      [1] Ma, Y.Q., J. Qin, and E.F. Plow,<i> Platelet integrin alpha(IIb)beta(3): activation mechanisms.</i> J Thromb Haemost, 2007. 5(7): p. 1345-52.<br>
+      [2] DeSimone, D.W., et al.,<i> The integrin family of cell surface receptors.</i> Biochem Soc Trans, 1987. 15(5): p. 789-91.<br>
+      [3] Chang, C.P., et al., <i>Positional importance of Pro53 adjacent to the Arg49-Gly50-Asp51 sequence of rhodostomin in binding to integrin alphaIIbbeta3.</i> Biochem J, 2001. 357(Pt 1): p. 57-64.<br>
+      [4] Mustard, J.F., R.L. Kinlough-Rathbone, and M.A. Packham,<i> Isolation of human platelets from plasma by centrifugation and washing.</i> Methods Enzymol, 1989. 169: p. 3-11.
+
+
+    </p>
+
+    </div>
+</div>
+  <!-- Packages / Pricing Tables -->
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

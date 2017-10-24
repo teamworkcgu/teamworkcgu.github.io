@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <script type="text/javascript" src="js/jquery.transitions.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions2.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions3.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions4.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions5.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions6.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.70748.js"></script>
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    
+    background-size: cover;
+    background-image: url("how_it_work.png");
+    min-height: 75%;
+    top:50px;
+}
+.menu {
+    display: none;
+}
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('p1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("p2.jpg");
+    min-height: 100px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("p1.jpg");
+    min-height: 200px;
+    }
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.absolute1 {
+    position:absolute;
+    margin-left: 0%;
+    
+    }
+.absolute2 {
+  position:absolute;
+    margin-left: 10%;
+
+    }
+
+.newabsolute{
+  position: absolute;
+        top: 345px;
+        left: 300px;
+        width: 300px;
+        height: 200px;
+    }
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col m6 w3-xlarge">
+      <a href="#" class="w3-button w3-block w3-black">team</a>
+    </div>
+    <div class="w3-col m6 w3-xlarge">
+      <a href="#about" class="w3-button w3-block w3-black">sponsor</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">CGUion<br>web</span>
+  </div>
+  
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE PROJECT</span></h5>
+    <p>We are the CGUnion team, a group of undergraduates from Taiwan Chang Gung University attending to the annual biomolecular design competition, BIOMOD.</p>
+    <p>The link you see above is a 3 minute video explaining our project which we spare no effort over the last three and half months in different labs. We aimed to establish a platform by detection of platelet integrin αIIbβ3 as a model, and further expanded for exosome containing cancer markers detection.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <ul>
+      <p><li>Nano-Magnetic Beads synthesis</li>
+         <li>Antibodies or recombinant proteins conjugated on Nano-Magnetic Beads</li>
+         <li>Sensitivity comparison between BluBox and western blot analysis</li>
+      </p>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+<!--*/////////////////////////////////////////////////-->
+    <div class="te-container">
+        
+        <div class="te-controls">
+          <input  id="type" value="te-flip3" type="hidden">
+            <!--option value="te-flip1">Flip 1</option>
+            <option value="te-flip2">Flip 2</option>
+            <option value="te-flip3">Flip 3</option>
+            <option value="te-flip4">Flip 4</option-->
+          </input >
+
+          
+          <!--a id="te-next" href="#" class="te-next">next</-->
+          
+        </div>
+ <!--*/////////////////////////////////////////////////-->
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">How to do </span></h5>
+
+ </div>
+
+</div>
+
+
+<!-- End page content -->
+</div>
+</div>
+
+<div class="w3-row">
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="newabsolute">
+      
+        <div id="te-wrapper" class="te-wrapper">
+          <div class="te-next">
+             
+            <div class="te-images" >
+            <!--div class="thepicture"-->
+              <img src="images/1.png" >
+              <img src="images/2.png" >
+              <!--img src="images/3.jpg"/>
+              <img src="images/4.jpg"/>
+              <img src="images/5.jpg"/-->
+            </div>
+         
+
+
+          <div class="te-cover">
+          
+            
+            <a href="C:\Users\tatao\Desktop\ImageTransitions\project.html" title="測試超連結"><img src="images/1.png"/></a>
+          </div>
+
+          <div class="te-transition ">
+            <div class="te-card">
+              <div class="te-front"></div>
+              <div class="te-back"></div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+ 
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="w3-col s6">
+        <div id="te-wrapper2" class="te-wrapper">
+          <div class="te-next">
+            <div class="te-images" >
+            <!--div class="thepicture"-->
+              <img src="images/2.png" >
+              <img src="images/white.jpg" >
+              <!--img src="images/3.jpg"/>
+              <img src="images/4.jpg"/>
+              <img src="images/5.jpg"/-->
+            </div>
+
+
+          <div class="te-cover">
+          
+            <a href="#" title="測試超連結"><img src="images/2.png"/></a>
+          </div>
+
+          <div class="te-transition">
+            <div class="te-card">
+              <div class="te-front"></div>
+              <div class="te-back"></div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+
+</script>
+
+
+    <script type="text/javascript" src="js/jquery.transitions.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions2.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions3.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions4.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions5.js"></script>
+    <script type="text/javascript" src="js/jquery.transitions6.js"></script>
+    <script> 
+      //var type=document.getElementById("type")
+    </script>
+    <script type="text/javascript" src="js/demo.js"></script>
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
