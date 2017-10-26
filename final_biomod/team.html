@@ -8,99 +8,196 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+.hover {position:relative;}
+
+.hover img {
+  position: absolute;
+  /* CSS3淡出淡入效果,1秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.hover img:nth-of-type(2):hover{
+  opacity:0; /*滑鼠滑入時，透明度變0*/
+}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 
 
   <!-- Header -->
-  <header >
-    
-    
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b class="w3-xxxlarge">Team</b><a href="https://teamworkcgu.github.io/final_biomod/index2.html" class="w3-button w3-white  w3-round-large">Home page </a></h1>
+    <h1><b class="w3-xxxlarge">Team</b><button class="w3-button w3-white  w3-round-large">Home page </button></h1>
 
     
     </div>
   </header>
   
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="team1-2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
+  <div style="margin-left: 50px">
+    <div class="w3-row-padding">
+      <div class="w3-col s4"><img src="teampic/p1-2.jpg" width="317.5px" height="480" alt="" name=n1 id=n1 onmouseover=inpic1() onmouseout=inpic1() ></div>
+      <!--div class="w3-col s4"><img src="teampic/p2-2.jpg" width="317.5px" height="480" alt="" name=n1 id=n1 onmouseover=inpic2() onmouseout=inpic2() ></div-->
+      <div class="w3-col s4"><img src="teampic/p3-2.jpg" width="317.5px" height="480" alt="" name=n3 id=n3 onmouseover=inpic3() onmouseout=inpic3() ></div>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="team2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
+    <div class="w3-row-padding">
+      <div class="w3-col s4"><img src="teampic/p4-2.jpg" width="317.5px" height="480" alt="" name=n4 id=n4 onmouseover=inpic4() onmouseout=inpic4() ></div>
+      <div class="w3-col s4"><img src="teampic/p5-2.jpg" width="317.5px" height="480" alt="" name=n5 id=n5 onmouseover=inpic5() onmouseout=inpic5() ></div>
+      <div class="w3-col s4"><img src="teampic/p6-2.jpg" width="317.5px" height="480" alt="" name=n6 id=n6 onmouseover=inpic6() onmouseout=inpic6() ></div>
     </div>
-    <div class="w3-third w3-container">
-      <img src="team3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
+    <div class="w3-row-padding">
+      <div class="w3-col s4"><img src="teampic/p7-2.jpg" width="317.5px" height="480" alt="" name=n7 id=n7 onmouseover=inpic7() onmouseout=inpic7() ></div>
+      <div class="w3-col s4"><img src="teampic/p8-2.jpg" width="317.5px" height="480" alt="" name=n8 id=n8 onmouseover=inpic8() onmouseout=inpic8() ></div>
+      <div class="w3-col s4"><img src="teampic/p9-2.jpg" width="317.5px" height="450" alt="" name=n9 id=n9 onmouseover=inpic9() onmouseout=inpic9() ></div>
     </div>
   </div>
 
+      
+
+     
+
+      
+  
   
   <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="team4.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="team5.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="team6.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
-    </div>
-  </div>
-  <!-- THird Photo Grid-->
 
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="team7.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="team8.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="team9.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b></b></p>
-        <p></p>
-      </div>
-    </div>
-  </div>
+<script>
 
-    
+function inpic1() { 
+if(document.n1.src=="https://teamworkcgu.github.io/final_biomod/teampic/p1.jpg"){
+  document.n1.src="teampic/p1-2.jpg";
+  
+  
+  }
+else {
+  document.n1.src="teampic/p1.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic2() { 
+if(document.n2.src=="https://teamworkcgu.github.io/final_biomod/teampic/p2.jpg"){
+  document.n2.src="teampic/p2-2.jpg";
+  
+  
+  }
+else {
+  document.n2.src="teampic/p2.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic3() { 
+if(document.n3.src=="https://teamworkcgu.github.io/final_biomod/teampic/p3.jpg"){
+  document.n3.src="teampic/p3-2.jpg";
+  
+  
+  }
+else {
+  document.n3.src="teampic/p3.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic4() { 
+if(document.n4.src=="https://teamworkcgu.github.io/final_biomod/teampic/p4.jpg"){
+  document.n4.src="teampic/p4-2.jpg";
+  
+  
+  }
+else {
+  document.n4.src="teampic/p4.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic5() { 
+if(document.n5.src=="https://teamworkcgu.github.io/final_biomod/teampic/p5.jpg"){
+  document.n5.src="teampic/p5-2.jpg";
+  
+  
+  }
+else {
+  document.n5.src="teampic/p5.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic6() { 
+if(document.n6.src=="https://teamworkcgu.github.io/final_biomod/teampic/p6.jpg"){
+  document.n6.src="teampic/p6-2.jpg";
+  
+  
+  }
+else {
+  document.n6.src="teampic/p6.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic7() { 
+if(document.n7.src=="https://teamworkcgu.github.io/final_biomod/teampic/p7.jpg"){
+  document.n7.src="teampic/p7-2.jpg";
+  
+  
+  }
+else {
+  document.n7.src="teampic/p7.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic8() { 
+if(document.n8.src=="https://teamworkcgu.github.io/final_biomod/teampic/p8.jpg"){
+  document.n8.src="teampic/p8-2.jpg";
+  
+  
+  }
+else {
+  document.n8.src="teampic/p8.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+function inpic9() { 
+if(document.n9.src=="https://teamworkcgu.github.io/final_biomod/teampic/p9.jpg"){
+  document.n9.src="teampic/p9-2.jpg";
+  
+  
+  }
+else {
+  document.n9.src="teampic/p9.jpg";
+  //alert(document.n1.src);
+
+  }
+}
+
+
+
+</script>
 
 </body>
 </html>
