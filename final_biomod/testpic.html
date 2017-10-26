@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>CGUion-Team</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+.hover {position:relative;}
+
+.hover img {
+  position: absolute;
+  /* CSS3淡出淡入效果,1秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.hover img:nth-of-type(2):hover{
+  opacity:0; /*滑鼠滑入時，透明度變0*/
+}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b class="w3-xxxlarge">Team</b><button class="w3-button w3-white  w3-round-large">Home page </button></h1>
+
+    
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+
+      <div><img src="teampic/p1-2.jpg" width="317.5px" height="480" alt="" name=n1 id=n1 onmouseover=inpic1() onmouseout=inpic2() ></div>
+      
+
+     
+
+      <div class="hover">
+      <img src="teampic/p2.jpg" alt="Norway" width="317.5px" height="480px" class="w3-hover-opacity"  style="top:1050px">
+      <img src="teampic/p2.jpg" alt="Norway" width="317.5px" height="480px" class="w3-hover-opacity"  style="top:1050px">
+      </div>
+
+
+
+      <div class="hover">
+      <img src="teampic/p3.jpg" alt="Norway" width="317.5px" height="480px" class="w3-hover-opacity"  style="top:50px">
+      <img src="teampic/p3-2.jpg" alt="Norway" width="317.5px" height="480px" class="w3-hover-opacity"  style="top:50px">
+      </div>
+  
+  
+  <!-- Second Photo Grid-->
+
+<script>
+var now;
+
+function inpic1() { 
+if(document.n1.src=="file:///C:/Users/tatao/Desktop/final_biomod/teampic/p1.jpg"){
+  document.n1.src="teampic/p1-2.jpg";
+  
+  
+  }
+else {
+  document.n1.src="teampic/p1.jpg";
+  alert(document.n1.src);
+
+}
+}
+
+function inpic2() { 
+if(document.n1.src=="teampic/p1.jpg"){
+  document.n1.src="teampic/p1-2.jpg";
+  
+  }
+else {
+  document.n1.src="teampic/p1.jpg";
+}
+}
+
+
+</script>
+
+</body>
+</html>
