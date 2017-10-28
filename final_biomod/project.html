@@ -5,11 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lateef" rel="stylesheet">
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
+
+
 </style>
 <body>
 
@@ -22,7 +26,15 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>CGUnionWeb<br>-Project</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="https://teamworkcgu.github.io/final_biomod/index2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="https://teamworkcgu.github.io/final_biomod/index2.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+    <a href="#Abstract" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Abstract</a>
+    <a href="#Background" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Background</a> 
+    <a href="#Methods" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Methods</a>
+    <a href="#Results" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Results</a>
+    <a href="#Discussion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Discussion</a>
+    <a href="#References" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">References</a>
+    <a href="#Acknowledgments" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Acknowledgments</a>
+
     
     
   </div>
@@ -51,10 +63,10 @@ body {font-size:16px;}
     <h1 class="w3-xxxlarge" style="color:#0069c0;"><b>Nano-Magnetic Beads for integrin receptor (αIIbβ3) detection</b></h1>
     <hr style="width:50px;border:5px solid blue" class="w3-round">
     <div class="w3-large">
-    <p class="w3-xxlarge">Abstract</p>
+    <p  id="Abstract" class="w3-xxlarge">Abstract</p>
     <p>Rapid detections of viral loads and cancer biomarkers in blood samples are highly demanded in clinical examination. Blusense Diagnostic has developed a portable and affordable device, BluBox, using immunoassay combined with magnetic nanoparticle technology for rapid and time-saving examination of Dengue viruses in blood. To expand the possible usage of BluBox in detection of exosome containing cancer markers, in this project, we aimed to establish a platform by detection of platelet integrin αIIbβ3 as a model. We synthesized nano-magnetic beads and conjugated with antibodies against platelet integrin αIIb or recombinant proteins of rhodostomin (RHO), a snake venom, which can specifically bind to αIIbβ3 receptors. Compared with western blot analysis and EIA measurement, we demonstrated that BluBox detector had a higher sensitivity in detecting platelet αIIbβ3. In the future, we will further develop a BluBox-based system for detecting cancer cell markers in blood, saliva, or urine.</p>
      <p><img src="projectpic/p9.png" width="100%" ></p>
-    <p class="w3-xxlarge">Background</p>
+    <p id="Background" class="w3-xxlarge">Background</p>
     <p><img src="projectpic/img4.png" width="70%" ></p>
     <p>Cancer is the second leading cause of death globally and metastasis is a major cause of cancer death [1]. Metastasis, cancer cells migrating from the original sites to other tissues, is an irreversible step of cancer progression. Although the process of cancer metastasis is very complicated and the mechanism is not completely understood, a recent review article indicated that integrins play an important role in pancreatic cancer and prostate carcinoma (see Table 1 adapted from reference [2]). Exosomes are, vesicles with diameter 30 to 130 nm. When secreted from cancer cells, exosomes carry information, such as integrin and miRNA, to target tissue to create a tumor niche. Therefore, circulating exosomes in body fluid, such as blood and urine, could be valuable diagnostic markers for cancer metastasis.</p>
     <p>Table 1 Integrin and integrin ligands found in exosomes.</p>
@@ -65,7 +77,7 @@ body {font-size:16px;}
     <p class="w3-medium"><b>Figure 1. The principle of one-step nano-magnetic bead-based immunoassay</b><br>(a) Schematic diagram of nano-magnetic bead clusters formation after magnetic incubation. (b) Diagram of BluBox device. (c) Spectra of the normalized 2<sup>nd</sup> harmonic photodetector signal vs. frequency of the magnetic field excitation.</p>
     <br>
     <p>After visiting the company to learn the fundamental principle of BluBox, we purposed to extend the usage of BluBox for rapid detection of cancer makers in liquid biopsies, particularly on exosomes containing tumor metastasis markers [2, 6]. Research laboratories in our university have identified several cancer markers [7, 8]. However, key reagents, such as antibodies against these biomarkers, and exosome samples from patients are not available yet. As the first step toward the goal, we set up a platform for detecting platelet integrin αIIbβ3 because of three advantages. <img src="projectpic/img2.png" width="70%"> <br> First, integrin αIIbβ3 is one of the most abundance receptors on platelet membranes. Second, antibodies against integrin αIIbβ3 are commercially available. Third, platelets are anucleated discoid cells of 2-3 <I>μ</I>m in size. After Triton X-100 treatment, platelet size can be reduced to the size of exosomes (100 nm) or the size of viruses (less than 100 nm).</p>
-    <p class="w3-xxlarge">Methods</p>
+    <p id="Methods" class="w3-xxlarge">Methods</p>
 
     <p class="w3-xlarge">Platelet protein analysis by Coomassie blue staining and western blot </p>
     <p>Various numbers of platelets (ranging from 1x10<sup>7</sup> to 1x10<sup>9</sup>/ml) were lysed with denaturing sample loading buffer and subjected to SDS-PAGE analysis. Proteins in the gel were stained with Coomassie blue or transferred onto a nitrocellulose membrane. After incubation with anti-integrin αIIb antibody as the primary antibody and HRP-conjugated donkey anti-rabbit IgG as a secondary antibody, signals were visualized by enhanced chemiluminescence (ECL) with Bio-rad imager.</p>
@@ -73,7 +85,7 @@ body {font-size:16px;}
     <p>Platelets treated with or without 0.1% Triton X-100 were loaded onto a formvar-coated copper grids. Samples were observed in a Joel electron microscope and the actual size of fragmented platelets was measured.</p>
     <p class="w3-xlarge">BluBox detection of integrin αΙΙb on platelets and HeLa cells</p>
     <p>Solution of nano-magnetic beads conjugated with integrin αIIb antibody and control IgG (1 mg/ml) were both diluted by fifty folds. Platelet sample was lysed by RIPA lysis buffer, diluted into different concentrations. Five <I>μ</I>l of the diluted platelet samples were mixed with 5 <I>μ</I>l of the diluted nano-magnetic beads solution, loaded into a cartridge, and detected by BluBox.</p>
-    <p class="w3-xxlarge">Results</p>
+    <p id="Results" class="w3-xxlarge">Results</p>
     <p class="w3-xlarge">Platelet protein analysis</p>
     <p> We performed SDS-PAGE followed by Coomassie blue staining (<b>Figure 2</b>) or western blot (<b>Figure 3</b>) to detect integrin αIIb. Coomassie blue staining could not detect 5 <I>μ</I>g total platelet. </p>
     <p><img src="projectpic/p2a.png" width="70%" ></p>
@@ -137,13 +149,13 @@ body {font-size:16px;}
     <p> Solution of nano-magnetic beads conjugated with GST-RHO(RGD) and GST-RHO(RGE) were both diluted by 50 folds. Varying concentrations of proteins were obtained by lysing 100, 1000, and 10000 HeLa cells in 100 <I>μ</I>l RIPA lysis buffer. Five <I>μ</I>l HeLa cell lysates were mixed with 5 <I>μ</I>l of the diluted NMBs solution, loaded into a cartridge, and detected by BluBox.</p>
 
 
-    <p class="w3-xxlarge">Discussion</p>
+    <p id="Discussion" class="w3-xxlarge">Discussion</p>
     <p>In this project, we demonstrated that nano-magnetic beads conjugated with anti-integrin αIIb antibodies can be used to detect platelet integrin αIIb successfully integrin from HeLa cell lysates could also be detected by BluBox using nano-megnatic beads conjugated with GST-RHO(RGD) and GST-RHO(RGE) for some HeLa cell concentrations. However, the sensitivity did not reach the low limit of 25 ng/ml as reported by Antunes et al. [5]. One of possibility was the nature of coated beads. In the future, we will combine nano-magnetic beads (NMBs) coated with anti-integrin αIIb antibody and recombinant rhodostomin to improve detection sensitivity. Improved BluBox sensitivity will provide an alternative choice for clinical detection of functional integrin αIIb in addition to conventional EIA and Flow Cytometry (see table 2 below). The advantages of using BluBox in a clinical setting are low cost of instrument, easy handle.<br><img src="projectpic/img3.png" width="70%"><br></p>
     
     <p><img src="projectpic/t3.png" width="80%" ></p>
     <p class="w3-medium"><b>Table 2 Comparison of various techniques for protein detection.</b></p>
 
-    <p class="w3-xxlarge">References</p>
+    <p id="References" class="w3-xxlarge">References</p>
     <p>[1] http://www.who.int/en/.<br>
     [2] Paolillo, M. and S. Schinelli, <i>Integrins and Exosomes, a Dangerous Liaison in Cancer Progression.</i> Cancers (Basel), 2017. 9(8).<br>
     [3] http://www.blusense-diagnostics.com.<br>
@@ -152,7 +164,7 @@ body {font-size:16px;}
     [6] Hurwitz, S.N., et al.,<i> Proteomic profiling of NCI-60 extracellular vesicles uncovers common protein cargo and cancer type-specific biomarkers.</i> Oncotarget, 2016. 7(52): p. 86999-87015.<br>
     [7] Chen, C.L., et al.,<i> Comparative Tissue Proteomics of Microdissected Specimens Reveals Novel Candidate Biomarkers of Bladder Cancer.</i> Mol Cell Proteomics, 2015. 14(9): p. 2466-78.<br>
     [8] Chiang, S.F., et al., <i>Bone Marrow Stromal Antigen 2 Is a Novel Plasma Biomarker and Prognosticator for Colorectal Carcinoma: A Secretome-Based Verification Study.</i> Dis Markers, 2015. 2015: p. 874054.<br>
-    <p class="w3-xxlarge">Acknowledgments</p>
+    <p id="Acknowledgments" class="w3-xxlarge">Acknowledgments</p>
     <p>We would like to express our gratitude to Professor Sze-Cheng John Lo for his guidance and support, and to our Department faculty, Li-Man Hung, Chao-Lan Yu Sebastian D. Fugmann, Scott C. Schuyler, Shu-Yuan Yang, and Sheng-Chieh Hsu, for their critical comments on our project and oral presentation. We would also like to thank the following professors and their lab members, Mu-Yi Hua, Ching-Ping Tseng, Li-Man Hung, Robert Y.-L. Wang, Yaa-Jyuhn Meir, Mei-Ling Cheng, Chao-Lan Yu, and Sze-Cheng John Lo, for supplying materials and technical help. We would like to give our special thanks to Blusense Diagnostic for making the BluBox available to us. Travel fund was partially supported by CGU.</p>
 
 </p>
