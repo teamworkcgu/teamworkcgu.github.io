@@ -44,7 +44,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,20 +57,12 @@ body, html {
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("p1.jpg");
-    min-height: 200px;
-    }
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1{
         background-attachment: scroll;
     }
 }
